@@ -101,11 +101,7 @@ class MainApp extends StatelessWidget {
                         child: Row(
                           spacing: 70,
                           children: [
-                            Image.network(
-                              width: 25,
-                              height: 25,
-                              'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png',
-                            ),
+                            Image.asset('images/fc.jpg'),
                             Text(
                               style: TextStyle(
                                 fontWeight: FontWeight.w400,
