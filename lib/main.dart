@@ -41,13 +41,97 @@ class MainApp extends StatelessWidget {
                 ),
                 SizedBox(
                   width: 350,
-                  child: Text(
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      fontSize: 13,
-                      color: Color.fromARGB(255, 255, 255, 255),
-                    ),
-                    'By tapping Create Account or Sing In, you agree to our Terms. Learm how we process your data in your Privacy policy and Cookies Policy',
+                  child: Column(
+                    children: [
+                      Text(
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 13,
+                          color: Color.fromARGB(255, 255, 255, 255),
+                        ),
+                        'By tapping Create Account or Sing In, you agree to our ',
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            style: TextStyle(
+                              fontSize: 13,
+                              color: Color.fromARGB(255, 255, 255, 255),
+                              decoration: TextDecoration.underline,
+                              decorationColor: Color.fromARGB(
+                                255,
+                                255,
+                                255,
+                                255,
+                              ),
+                            ),
+                            'Terms',
+                          ),
+                          Text(
+                            style: TextStyle(
+                              fontSize: 13,
+                              color: Color.fromARGB(255, 255, 255, 255),
+                            ),
+                            '. Learm how we process your data in your ',
+                          ),
+                          Text(
+                            style: TextStyle(
+                              fontSize: 13,
+                              color: Color.fromARGB(255, 255, 255, 255),
+                              decoration: TextDecoration.underline,
+                              decorationColor: Color.fromARGB(
+                                255,
+                                255,
+                                255,
+                                255,
+                              ),
+                            ),
+                            'Privacy',
+                          ),
+                        ],
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            style: TextStyle(
+                              fontSize: 13,
+                              color: Color.fromARGB(255, 255, 255, 255),
+                              decoration: TextDecoration.underline,
+                              decorationColor: Color.fromARGB(
+                                255,
+                                255,
+                                255,
+                                255,
+                              ),
+                            ),
+                            'policy',
+                          ),
+                          Text(
+                            style: TextStyle(
+                              fontSize: 13,
+                              color: Color.fromARGB(255, 255, 255, 255),
+                            ),
+                            ' and Cookies ',
+                          ),
+                          Text(
+                            style: TextStyle(
+                              fontSize: 13,
+                              color: Color.fromARGB(255, 255, 255, 255),
+                              decoration: TextDecoration.underline,
+                              decorationColor: Color.fromARGB(
+                                255,
+                                255,
+                                255,
+                                255,
+                              ),
+                            ),
+                            'Policy',
+                          ),
+                        ],
+                      ),
+                    ],
                   ),
                 ),
                 SizedBox(
@@ -101,7 +185,12 @@ class MainApp extends StatelessWidget {
                         child: Row(
                           spacing: 70,
                           children: [
-                            Image.asset('images/fc.jpg'),
+                            Image.asset(
+                              color: Color.fromARGB(255, 255, 255, 255),
+                              width: 25,
+                              height: 25,
+                              'images/fcb.png',
+                            ),
                             Text(
                               style: TextStyle(
                                 fontWeight: FontWeight.w400,
@@ -129,11 +218,11 @@ class MainApp extends StatelessWidget {
                         child: Row(
                           spacing: 50,
                           children: [
-                            Image.network(
+                            Image.asset(
                               color: Color.fromARGB(255, 255, 255, 255),
                               width: 25,
                               height: 25,
-                              'https://macmagazine.com.br/wp-content/uploads/2022/02/11-Apple-Logo-Current-600x600.png',
+                              'images/phmelhor.png',
                             ),
                             Text(
                               style: TextStyle(
